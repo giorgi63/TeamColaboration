@@ -1,7 +1,5 @@
 import React from 'react';
 import List from './List';
-import CartList from './CartList';
-
 
 
 const items = [
@@ -13,17 +11,10 @@ const items = [
 ];
 
 const Home = () => (
-
-  <>
-
     <div className="home-container">
     <h1 className="home-title">Our Applications 👊</h1>
     <List items={items} />
-    <div className="home-container">
-    <h1 className="home-title">🧺 Buy Our Brand Cloth  </h1>
-    <CartList items={items} />
-
-  </div></div> </>
+  </div>
 );
 
 export default Home;
