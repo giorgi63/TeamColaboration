@@ -15,22 +15,21 @@ export const AnimalShow = () => {
   const [animalsList, setAnimal] = useState([]); // animal array state
 
   function handleClick() {
-    console.log("Button clicked....");
     setAnimal([...animalsList, getRandomAnimal()]);
-    console.log(animalsList);
   }
 
-  var animalsToRender = animalsList.map((animal) => {
-    return <DisplayAnimal type={animal} />;
+  var animalsToRender = animalsList.map((animal, index) => {
+    return <DisplayAnimal key={index} type={animal} />;
   });
 
-  //Map function will iterate through every animal and create a array of component list
-  
   return (
-    <>
-      <button onClick={handleClick}>Add Animal</button>
-      <div>{animalsToRender}</div>
-    </>
+    <div className="animal-show-container">
+      <h2>Animal Show</h2>
+      <p>This app randomly adds animals on tap, and clicking on them increases the size of the heart as many times as you tap to infinity.</p>
+
+      <button className="add-animal-button" onClick={handleClick}>Add Animal</button>
+      <div className="animals-list">{animalsToRender}</div>
+    </div>
   );
 };
 
