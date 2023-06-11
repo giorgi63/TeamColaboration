@@ -12,7 +12,7 @@ const items = [
 
 const Home = () => (
     <div className="home-container">
-    <h1 className="home-title">Welcome to our Home Page</h1>
+    <h1 className="home-title">Our Applications 👊</h1>
     <List items={items} />
   </div>
 );
