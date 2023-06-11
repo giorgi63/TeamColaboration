@@ -1,6 +1,8 @@
 import React from 'react';
 import List from './List';
 import CartList from './CartList';
+import HomeSection from './HomeSection';
+
 
 
 
@@ -15,7 +17,7 @@ const items = [
 const Home = () => (
 
   <>
-
+    <HomeSection />
     <div className="home-container">
     <h1 className="home-title">Our Applications 👊</h1>
     <List items={items} />
