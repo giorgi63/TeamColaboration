@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import Home from './Home';
 import Products from './Products';
 import About from './About';
@@ -10,7 +10,7 @@ import AnimalShow from './AnimalShow';
 import CarsApp from './CarsApp';
 
 const Navbar = () => (
-  <Router>
+  <BrowserRouter>
     <nav className="navbar">
       <div className="navbar-inner">
         <div className="navbar-logo"></div>
@@ -48,7 +48,7 @@ const Navbar = () => (
       <Route path="/AnimalShow" element={<AnimalShow />} />
       <Route path="/CarsApp" element={<CarsApp />} />
     </Routes>
-  </Router>
+  </BrowserRouter>
 );
 
 export default Navbar;
