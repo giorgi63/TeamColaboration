@@ -7,6 +7,7 @@ import Checkout from './Checkout';
 import Contact from './Contact';
 import Packages from './Packages';
 import AnimalShow from './AnimalShow';
+import CarsApp from './CarsApp';
 
 const Navbar = () => (
   <Router>
@@ -45,6 +46,7 @@ const Navbar = () => (
       <Route path="/contact" element={<Contact />} />
       <Route path="/packages" element={<Packages />} />
       <Route path="/AnimalShow" element={<AnimalShow />} />
+      <Route path="/CarsApp" element={<CarsApp />} />
     </Routes>
   </Router>
 );
