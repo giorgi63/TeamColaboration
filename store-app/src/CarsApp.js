@@ -32,14 +32,15 @@ const CarsApp = () => {
 
   return (
     <>
+      <br />
       <SearchBar cb={callMe} />
       <ImageList imgList={images} />
+      <div style={{ marginBottom: "300px" }}></div>
     </>
   );
-}
+};
 
-export default CarsApp
-
+export default CarsApp;
 
 // Access Key
 // 0195lSK0lm6kyYFa8Yjptntl6pO8Sz6J-xRjAKOtQe0

@@ -11,7 +11,7 @@ const items = [
     id: 1,
     image:
       "https://cdn.dribbble.com/users/1224589/screenshots/16105004/media/3260d802d993ac3891c6428d13863a62.jpg?compress=1&resize=400x300&vertical=center",
-    route: "/Item1",
+    route: "/BookApp",
     title: "BookApp",
   },
   {

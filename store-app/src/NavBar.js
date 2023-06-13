@@ -8,6 +8,7 @@ import Contact from './Contact';
 import Packages from './Packages';
 import AnimalShow from './AnimalShow';
 import CarsApp from './CarsApp';
+import BookApp from './BookApp';
 
 const Navbar = () => (
   <BrowserRouter>
@@ -47,8 +48,10 @@ const Navbar = () => (
       <Route path="/packages" element={<Packages />} />
       <Route path="/AnimalShow" element={<AnimalShow />} />
       <Route path="/CarsApp" element={<CarsApp />} />
+      <Route path="/BookApp" element={<BookApp />} />
     </Routes>
   </BrowserRouter>
 );
 
 export default Navbar;
+
