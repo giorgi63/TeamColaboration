@@ -1,11 +1,8 @@
-import React, { useState } from "react";
-import { useContext } from "react";
+import React, { useState, useContext } from "react";
 import BooksContext from "../BookContext";
 
-function BookEdit({ book, updateBook, setIsEdit }) {
-  //same const val or const value?  what about let same thing???
+function BookEdit({ book, setIsEdit }) {
   const value = useContext(BooksContext);
-  console.log(value);
 
   const [newValue, setNewValue] = useState("");
   const handleEdit = () => {
@@ -16,12 +13,14 @@ function BookEdit({ book, updateBook, setIsEdit }) {
   function handleChange(eventDetails) {
     setNewValue(eventDetails.target.value);
   }
+  
   return (
-    <div>
-      <div>{book.title}</div>
-      <input value={newValue} onChange={handleChange} />
-      <button onClick={handleEdit}>Save</button>
+    <div className="book-edit-container">
+      <div className="book-edit-title">{book.title}</div>
+      <input className="book-edit-input" value={newValue} onChange={handleChange} />
+      <button className="book-edit-button" onClick={handleEdit}>Save</button>
       <button
+        className="book-edit-cancel"
         onClick={() => {
           setIsEdit(false);
         }}
